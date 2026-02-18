@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CampusNexus AI - Unified AI-Powered Knowledge Search for Smart Campuses">
+    <title>CampusNexus AI - Smart Campus Knowledge Search</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <h1>CampusNexus AI</h1>
+                </div>
+                <div class="header-actions">
+                    <div class="language-selector">
+                        <select id="languageSelect" class="language-select">
+                            <option value="en">🌐 English</option>
+                            <option value="hi">🇮🇳 Hindi</option>
+                            <option value="mr">MR मराठी</option> 
+                            <option value="es">🇪🇸 Spanish</option>
+                            <option value="fr">🇫🇷 French</option>
+                            <option value="de">🇩🇪 German</option>
+                        </select>
+                    </div>
+                    <div class="status-indicator" id="statusIndicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Checking...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2 class="hero-title">Unified AI-Powered Knowledge Search</h2>
+                <p class="hero-subtitle">Intelligent search system for multi-modal academic content using local AI. Fully offline, no API keys required.</p>
+            </section>
+
+            <!-- Tab Navigation -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="chat" id="chatTab">
+                    💬 AI Chat
+                </button>
+                <button class="tab-btn" data-tab="upload" id="uploadTab">
+                    📤 Upload Documents
+                </button>
+                <button class="tab-btn" data-tab="analytics" id="analyticsTab">
+                    📊 PYQ Analytics
+                </button>
+                <button class="tab-btn" data-tab="graph" id="graphTab">
+                    🕸️ Knowledge Graph
+                </button>
+                <button class="tab-btn" data-tab="governance" id="governanceTab">
+                    ⚙️ Governance
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Chat Tab -->
+                <div class="tab-panel active" id="chatPanel">
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="welcome-message">
+                                <div class="welcome-icon">🤖</div>
+                                <h3 data-i18n="welcomeTitle">Welcome to CampusNexus AI!</h3>
+                                <p data-i18n="welcomeSubtitle">Ask questions about your uploaded documents and I'll provide accurate answers with sources.</p>
+                            </div>
+                        </div>
+                        <div class="chat-input-container">
+                            <input 
+                                type="text" 
+                                id="chatInput" 
+                                class="chat-input" 
+                                placeholder="Ask anything about your documents..."
+                                autocomplete="off"
+                            >
+                            <button id="sendButton" data-i18n="send-button" class="send-button">
+                                <span>Send</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M2 10L18 10M18 10L11 3M18 10L11 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload Tab -->
+                <div class="tab-panel" id="uploadPanel">
+                    <div class="upload-container">
+                        <div class="upload-zone" id="uploadZone">
+                            <div class="upload-icon">📁</div>
+                            <h3>Drag & Drop Documents</h3>
+                            <p>or click to browse</p>
+                            <p class="upload-hint">Supported: PDF, DOCX, PPTX</p>
+                            <input type="file" id="fileInput" accept=".pdf,.docx,.pptx" multiple hidden>
+                        </div>
+                        <div class="upload-list" id="uploadList"></div>
+                    </div>
+                </div>
+
+                <!-- Analytics Tab -->
+                <div class="tab-panel" id="analyticsPanel">
+                    <div class="analytics-container">
+                        <h3 class="section-title">Previous Year Questions Analytics</h3>
+                        <div class="analytics-grid" id="analyticsGrid">
+                            <div class="analytics-card">
+                                <div class="analytics-icon">📝</div>
+                                <div class="analytics-value" id="totalQuestions">0</div>
+                                <div class="analytics-label">Total Questions</div>
+                            </div>
+                            <div class="analytics-card">
+                                <div class="analytics-icon">📚</div>
+                                <div class="analytics-value" id="topicCount">0</div>
+                                <div class="analytics-label">Topics Covered</div>
+                            </div>
+                            <div class="analytics-card">
+                                <div class="analytics-icon">📈</div>
+                                <div class="analytics-value" id="yearRange">N/A</div>
+                                <div class="analytics-label">Year Range</div>
+                            </div>
+                        </div>
+                        <div class="analytics-details" id="analyticsDetails"></div>
+                    </div>
+                </div>
+
+                <!-- Knowledge Graph Tab -->
+                <div class="tab-panel" id="graphPanel">
+                    <div class="graph-container">
+                        <h3 class="section-title">Knowledge Graph Visualization</h3>
+                        <div class="graph-controls">
+                            <button id="refreshGraph" class="control-btn">🔄 Refresh Graph</button>
+                        </div>
+                        <div class="graph-canvas" id="graphCanvas">
+                            <div class="graph-placeholder">
+                                <div class="graph-placeholder-icon">🕸️</div>
+                                <p>Knowledge graph will appear here</p>
+                                <p class="graph-hint">Upload documents to generate the graph</p>
+                            </div>
+                        </div>
+                        <div class="graph-stats" id="graphStats"></div>
+                    </div>
+                </div>
+
+                <!-- Governance Tab -->
+                <div class="tab-panel" id="governancePanel">
+                    <div class="governance-container">
+                        <h3 class="section-title">Governance Panel</h3>
+                        <div class="governance-stats" id="governanceStats"></div>
+                        <div class="governance-documents" id="governanceDocuments">
+                            <h4>Pending Approvals</h4>
+                            <div id="pendingList" class="pending-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>CampusNexus AI - Fully Local & Offline | No API Keys Required | Powered by Ollama + Mistral</p>
+        </div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

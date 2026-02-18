@@ -1,0 +1,201 @@
+{
+  "documents": {
+    "cd7b5cbd-8ef2-454a-9af1-e6ac23390825": {
+      "filename": "CASE STUDY.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-16T23:36:53.905387",
+      "status": "rejected",
+      "approval_date": "2026-02-16T23:39:22.150482",
+      "approver": "admin",
+      "rejection_reason": "its not relevant doc"
+    },
+    "f7d2fcce-33a4-4d04-a2bb-52fcdca6d4e0": {
+      "filename": "give me the questions with diagram if it contains.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-17T00:19:12.583324",
+      "status": "approved",
+      "approval_date": "2026-02-17T00:34:21.532376",
+      "approver": "admin",
+      "rejection_reason": null
+    },
+    "15cc53af-66e2-43f3-a3ee-02dc296c2009": {
+      "filename": "give me the questions with diagram if it contains.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-17T00:19:39.520008",
+      "status": "approved",
+      "approval_date": "2026-02-17T00:34:22.940975",
+      "approver": "admin",
+      "rejection_reason": null
+    },
+    "39f3400a-4978-4cbb-8011-eca4e34ffc29": {
+      "filename": "INNOVGENIUS 26 PPT FORMAT 2.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-17T00:25:13.664813",
+      "status": "approved",
+      "approval_date": "2026-02-17T00:34:24.523900",
+      "approver": "admin",
+      "rejection_reason": null
+    },
+    "5d9c2d29-e5fb-4370-af44-905722a0792b": {
+      "filename": "give me the questions with diagram if it contains.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-17T21:48:56.969467",
+      "status": "pending",
+      "approval_date": null,
+      "approver": null,
+      "rejection_reason": null
+    },
+    "d4d80cf5-54b8-4254-88a1-798aada1baae": {
+      "filename": "give me the step by solution of each questions.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-17T22:19:38.760585",
+      "status": "pending",
+      "approval_date": null,
+      "approver": null,
+      "rejection_reason": null
+    },
+    "86df70d4-3014-4ee5-bd86-4dc04a5042f4": {
+      "filename": "I'm student of 10th std ssc maharashtra board and.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-17T22:28:33.964387",
+      "status": "pending",
+      "approval_date": null,
+      "approver": null,
+      "rejection_reason": null
+    },
+    "f11538c7-fc2d-46fc-b449-85516f3ed6ee": {
+      "filename": "daa.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-18T12:22:18.728141",
+      "status": "pending",
+      "approval_date": null,
+      "approver": null,
+      "rejection_reason": null
+    }
+  },
+  "queries": [
+    {
+      "query": "can you tell me about thermodynamics",
+      "user": "anonymous",
+      "timestamp": "2026-02-16T23:36:32.709902"
+    },
+    {
+      "query": "hii",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T00:07:30.960350"
+    },
+    {
+      "query": "what this file contains",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T00:20:02.208907"
+    },
+    {
+      "query": "can you give me architecture",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T00:25:58.679926"
+    },
+    {
+      "query": "can you give the question of maths in one row to make a question paper",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T00:30:30.555573"
+    },
+    {
+      "query": "State basic proportionality thm in one sentence",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T00:33:07.096963"
+    },
+    {
+      "query": "can you give me questions which are there in the pdf",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T21:49:42.883687"
+    },
+    {
+      "query": "questions according to the pyq",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T21:53:01.895167"
+    },
+    {
+      "query": "questions",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T21:54:39.650435"
+    },
+    {
+      "query": "give the questions list that it contains",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:01:50.245403"
+    },
+    {
+      "query": "can you give the expected questions",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:05:12.241629"
+    },
+    {
+      "query": "what is document about",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:11:10.443927"
+    },
+    {
+      "query": "what is document about",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:16:29.337122"
+    },
+    {
+      "query": "can you tell what is document about",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:20:17.485091"
+    },
+    {
+      "query": "can you tell me what is document about",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:24:05.190490"
+    },
+    {
+      "query": "what are the question incluced in the document",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:29:26.289897"
+    },
+    {
+      "query": "iss document me kya kya he",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:55:49.005039"
+    },
+    {
+      "query": "iss document me kya kya he",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:56:58.657700"
+    },
+    {
+      "query": "what is there is latest document",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:57:32.267848"
+    },
+    {
+      "query": "okay",
+      "user": "anonymous",
+      "timestamp": "2026-02-17T22:57:51.178749"
+    },
+    {
+      "query": "lst document was about",
+      "user": "anonymous",
+      "timestamp": "2026-02-18T12:20:45.039110"
+    },
+    {
+      "query": "last document was about",
+      "user": "anonymous",
+      "timestamp": "2026-02-18T12:28:55.418996"
+    }
+  ],
+  "users": {},
+  "stats": {
+    "total_queries": 22,
+    "total_uploads": 8
+  }
+}
