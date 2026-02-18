@@ -31,15 +31,15 @@
     --text-muted: #94a3b8;
     */
     /* Neutral Colors - Darker & Richer */
-    --bg-primary: #05144f;
+    --bg-primary: #04113e;
     /* Deepest Black */
-    --bg-secondary: rgba(72, 33, 110, 0.7);
+    --bg-secondary: rgba(26, 2, 50, 0.7);
     /* Glassmorphism effect */
-    --bg-tertiary: #67a1ff;
+    --bg-tertiary: #090d14;
     --text-primary: #FFFFFF;
     --text-secondary: #B0B9C8;
     /* Glow Effects */
-    --shadow-glow: 0 0 15px rgba(34, 238, 249, 0.4);
+    --shadow-glow: 0 0 15px rgba(18, 29, 29, 0.4);
     --shadow-purple: 0 0 15px rgba(189, 0, 255, 0.3);
 
 
