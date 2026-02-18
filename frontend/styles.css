@@ -21,7 +21,7 @@
     --gradient-primary: linear-gradient(135deg, #00F2FF 0%, #BD00FF 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    --gradient-dark: linear-gradient(180deg, #0B0E14 0%, #19212D 100%);
+    --gradient-dark: linear-gradient(180deg, #740b76 0%, #c966d2 100%);
     /* Neutral Colors */
     /*--bg-primary: #0f172a;
     --bg-secondary: #1e293b;
@@ -31,7 +31,7 @@
     --text-muted: #94a3b8;
     */
     /* Neutral Colors - Darker & Richer */
-    --bg-primary: #080A0F;
+    --bg-primary: #500851;
     /* Deepest Black */
     --bg-secondary: rgba(20, 25, 35, 0.7);
     /* Glassmorphism effect */
