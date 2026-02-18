@@ -89,6 +89,16 @@
       "approval_date": null,
       "approver": null,
       "rejection_reason": null
+    },
+    "c37d2eda-cc50-436c-97a2-ee054b1c4e25": {
+      "filename": "give me the step by solution of each questions.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-18T19:13:36.303803",
+      "status": "pending",
+      "approval_date": null,
+      "approver": null,
+      "rejection_reason": null
     }
   },
   "queries": [
@@ -211,6 +221,6 @@
   "users": {},
   "stats": {
     "total_queries": 23,
-    "total_uploads": 9
+    "total_uploads": 10
   }
 }
