@@ -3,48 +3,63 @@
 /* CSS Variables */
 :root {
     /* Colors */
-    --primary: #6366f1;
-    --primary-light: #818cf8;
-    --primary-dark: #4f46e5;
-    --secondary: #ec4899;
-    --success: #10b981;
+    --primary: #00f2ff;
+    --primary-light: #70ffff;
+    --primary-dark: #00B4D8;
+    --secondary: #BD00FF;
+    --success: #00FF95;
     --warning: #f59e0b;
     --danger: #ef4444;
-    
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    /*Gradients */
+    /*--gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --gradient-dark: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-    
+    */
+    /* Deep Galactic Gradients */
+    --gradient-primary: linear-gradient(135deg, #00F2FF 0%, #BD00FF 100%);
+    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-dark: linear-gradient(180deg, #0B0E14 0%, #19212D 100%);
     /* Neutral Colors */
-    --bg-primary: #0f172a;
+    /*--bg-primary: #0f172a;
     --bg-secondary: #1e293b;
     --bg-tertiary: #334155;
     --text-primary: #f1f5f9;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
-    
+    */
+    /* Neutral Colors - Darker & Richer */
+    --bg-primary: #080A0F;
+    /* Deepest Black */
+    --bg-secondary: rgba(20, 25, 35, 0.7);
+    /* Glassmorphism effect */
+    --bg-tertiary: #1C232E;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B9C8;
+
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    
+
     /* Border Radius */
     --radius-sm: 0.5rem;
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
     --radius-full: 9999px;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.3);
-    
+
     /* Transitions */
     --transition-fast: 150ms ease;
     --transition-base: 300ms ease;
@@ -103,8 +118,15 @@ body {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .logo h1 {
@@ -160,8 +182,15 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
 }
 
 .status-text {
@@ -245,17 +274,35 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Chat Container */
-.chat-container {
+/*.chat-container {
     background: var(--bg-secondary);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-xl);
+}
+    */
+.chat-container {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    /* Subtle cyan border */
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    /* This creates the elegant glass look */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
 }
 
 .chat-messages {
@@ -308,8 +355,15 @@ body {
 }
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateX(-20px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .message.user {
@@ -691,7 +745,8 @@ body {
     gap: var(--spacing-xs);
 }
 
-.approve-btn, .reject-btn {
+.approve-btn,
+.reject-btn {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: var(--radius-md);
@@ -710,7 +765,8 @@ body {
     color: white;
 }
 
-.approve-btn:hover, .reject-btn:hover {
+.approve-btn:hover,
+.reject-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -741,7 +797,9 @@ body {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Responsive */
@@ -749,25 +807,25 @@ body {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .header-content {
         flex-direction: column;
         gap: var(--spacing-sm);
     }
-    
+
     .tabs {
         flex-wrap: nowrap;
         justify-content: flex-start;
     }
-    
+
     .message-content {
         max-width: 85%;
     }
-    
+
     .analytics-grid {
         grid-template-columns: 1fr;
     }

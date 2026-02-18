@@ -79,6 +79,16 @@
       "approval_date": null,
       "approver": null,
       "rejection_reason": null
+    },
+    "bd2c1921-911d-4745-9541-d755e3c6f6e4": {
+      "filename": "Document 1.pdf",
+      "file_type": "pdf",
+      "uploader": "anonymous",
+      "upload_date": "2026-02-18T15:27:09.091518",
+      "status": "pending",
+      "approval_date": null,
+      "approver": null,
+      "rejection_reason": null
     }
   },
   "queries": [
@@ -191,11 +201,16 @@
       "query": "last document was about",
       "user": "anonymous",
       "timestamp": "2026-02-18T12:28:55.418996"
+    },
+    {
+      "query": "what is document about?",
+      "user": "anonymous",
+      "timestamp": "2026-02-18T16:57:12.711364"
     }
   ],
   "users": {},
   "stats": {
-    "total_queries": 22,
-    "total_uploads": 8
+    "total_queries": 23,
+    "total_uploads": 9
   }
 }
